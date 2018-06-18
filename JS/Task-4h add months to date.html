@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-4h</title>
+</head>
+<body>
+	<script type="text/javascript">
+				function add_months(dt, n) 
+ 			{
+
+   				return new Date(dt.setMonth(dt.getMonth() + n));      
+ 			}
+
+				dt = new Date();
+				document.write(add_months(dt, 10).toString()+"<br/>");  
+
+				dt = new Date(2014,10,2);
+				document.write(add_months(dt, 10).toString());
+	</script>
+
+
+</body>
+</html>

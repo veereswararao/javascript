@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 4-d</title>
+</head>
+<body>
+	<h3> JavaScript function to get the last day of a month.</h3>
+	<script type="text/javascript">
+	var lastday = function(y,m)
+	{
+		return  new Date(y, m +1, 0).getDate();
+	}
+		document.write("Last Day in January: "+lastday(2018,0)+"<br/>");
+		document.write("Last Day in February: "+lastday(2018,1)+"<br/>");
+		document.write("Last Day in March: "+lastday(2018,2)+"<br/>");
+		document.write("Last Day in April: "+lastday(2018,3)+"<br/>");
+		document.write("Last Day in October: "+lastday(2018,9)+"<br/>");
+		document.write("Last Day in August: "+lastday(2018,7));
+</script>
+
+</body>
+</html>

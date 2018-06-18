@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-3B</title>
+</head>
+<body>
+Enter the 1st number: &nbsp;&nbsp;&nbsp;<input type="number" id="num1" autofocus="on" required="required" /><br/><br/>
+Enter the 2nd number: &nbsp;<input type="number" id="num2" required="required"/><br/></br>
+<input type="button" onclick="multiply()" value="Multiply">
+<input type="button" onclick="divide()" value="divide">
+<p id="demo"></p>
+
+	<script type="text/javascript">
+		 
+		function multiply()
+		{
+			var a = document.getElementById("num1").value;
+		 	var b = document.getElementById("num2").value;
+			var c= a*b;
+
+			document.getElementById("demo").innerHTML="The result " + c ;
+		}
+
+		function divide()
+		{
+			var a = document.getElementById("num1").value;
+		 	var b = document.getElementById("num2").value;
+			var d= a/b;
+
+			document.getElementById("demo").innerHTML="The result " + d ;
+		}
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-4a</title>
+
+</head>
+<body>
+	<!--JavaScript code to get current date -->
+
+	<h2>JavaScript ISO Dates</h2>
+	<h5>Complete Date</h5>
+<p id="demo"></p>
+	
+<script>
+	
+var d = new Date("2018-06-11");
+document.getElementById("demo").innerHTML = d;
+</script>
+
+
+		<hr/>
+		<p>Separate date and time with a capital T.</p>
+
+		<p>Indicate UTC time with a capital Z.</p>
+
+
+		<p id="demo2"></p>
+
+		<script>
+			var m = new Date("2018-06-11T12:00:00Z");
+			document.getElementById("demo2").innerHTML = d;
+		</script>
+
+		<hr/>
+
+		<h2>JavaScript new Date()</h2>
+
+		<p id="demo3"></p>
+
+		<script>
+			var d = new Date("06/11/2018");
+			document.getElementById("demo3").innerHTML = d;
+		</script>
+
+			<hr/>
+
+			
+
+			<p id="demo4"></p>
+			<p id="demo4.1"></p>
+			<p id="demo4.2"></p>
+			<p id="demo4.3"></p>
+			<p id="demo4.4"></p>
+			<p id="demo4.5"></p>
+			<p id="demo4.6"></p>
+			<p id="demo4.7"></p>
+
+			<p id="dt"></p>
+
+		<script>
+			var d = new Date();
+			document.getElementById("demo4").innerHTML = "Year: "+d.getFullYear();
+
+			var d1 = new Date();
+			var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			document.getElementById("demo4.1").innerHTML = "Month:	"+months[d1.getMonth()];
+			
+			var d2 = new Date();
+			document.getElementById("demo4.2").innerHTML = "Date: "+d2.getDate();
+
+			var d3 = new Date();
+			document.getElementById("demo4.3").innerHTML = "Hours: "+ d3.getHours();
+
+			var d4 = new Date();
+			document.getElementById("demo4.4").innerHTML = "Minutes: "+ d4.getMinutes();
+
+			var d5 = new Date();
+			document.getElementById("demo4.5").innerHTML = "Seconds: "+d5.getSeconds();
+
+			var d6 = new Date();
+			document.getElementById("demo4.6").innerHTML ="Milli-seconds: "+ d6.getMilliseconds();
+
+			var d7 = new Date();
+			var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+			document.getElementById("demo4.7").innerHTML ="Day: "+ days[d7.getDay()];
+
+
+			var m= d1; 
+			document.getElementById("dt").innerHTML=m;
+
+
+
+		</script>
+
+		<hr/>
+
+
+
+
+</body>
+</html>

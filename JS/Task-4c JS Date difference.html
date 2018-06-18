@@ -1,0 +1,47 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 4-C</title>
+</head>
+<body>
+	<h3 style="text-align: center">Difference between two Dates</h3>
+
+	<script type="text/javascript">
+		var date_diff_indays = function(date1, date2) 
+		{
+			dt1 = new Date(date1);
+			dt2 = new Date(date2);
+			return Math.floor((Date.UTC(dt2.getFullYear(), dt2.getMonth(), dt2.getDate()) - Date.UTC(dt1.getFullYear(), dt1.getMonth(), dt1.getDate()) ) /(1000 * 60 * 60 * 24));
+		}
+			//document.write(date_diff_indays('04/02/2014', '11/04/2014'));
+			//document.write(date_diff_indays('12/02/2014', '11/04/2014'));
+			document.write("Difference between dates is(in days) : "+ date_diff_indays('08/04/2014', '08/20/2014'));
+
+</script>
+
+
+</body>
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 4-C</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	var d1 = new Date("12/12/2013");
+	var d2 = new Date("12/12/2014");
+
+	var timeDiff = d2.getTime() - d1.getTime();
+	var DaysDiff = timeDiff / (1000 * 3600 * 24);
+
+	document.write("Days of difference between <br>"+d1+"<br> and <br>"+d2+" is:<br> " +DaysDiff);
+
+</script>
+
+</body>
+</html>

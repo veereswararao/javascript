@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task 4-e</title>
+</head>
+<body>
+	<h3> JavaScript function to get YESTERDAY</h3>
+
+	<script type="text/javascript">
+		var yesterday =  function(date1){
+ 					   	var dt = new Date(date1);
+					  	return new Date((dt.setDate(dt.getDate()-1))).toString();
+						}
+		document.write(yesterday('Jun 15, 2018')+"<br/>");
+		document.write(yesterday('Jun 16, 2018')+"<br/>");
+		document.write(yesterday('Jun 17, 2018'));
+
+	</script>
+
+
+</body>
+</html>

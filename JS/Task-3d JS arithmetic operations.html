@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-3d</title>
+	<style type="text/css">
+		.box{
+			margin-top: -22px;
+			margin-left: 75px;
+			height:10px;
+			width: 200px; 
+			outline: 2px solid;
+			}
+			.nav{
+				background-color: cyan;
+				margin-left: 400px;
+				outline: 2px cyan;
+				text-align: center;
+				width: 200px;
+				height: 50px;
+			}
+			input[type=number]{
+				height:30px;
+				width: 200px;
+				font-size: 20px;
+				outline: 2px solid;
+			}
+			input[type=button]{
+				margin-top: 10px;
+				height:30px;
+				width:40px;
+				background-color: orange;
+				color:white;
+				font-size: 20px;
+			}
+		
+	</style>
+
+</head>
+<body>
+	<input type="number" id="num1" placeholder="Enter the 1st number" required="required" autofocus="on" style="margin-left:200px"  />
+
+	<input type="number" id="num2" placeholder="Enter the 2nd number" required="required"  style="margin-left:130px" /><br/><br/>
+		<div class="nav">
+		<input type="button" id="add" value="+" onclick="add()">
+		<input type="button" id="sub" value="-" onclick="sub()">
+		<input type="button" id="mul" value="*" onclick="mul()">
+		<input type="button" id="div" value="/" onclick="div()">
+		</div>
+	<p id="demo" style="font-size: 20px; margin-left:300px; color:red;"></p>
+
+	<script type="text/javascript">
+		function add()
+		{
+			var a = document.getElementById("num1").value;
+		 	var b = document.getElementById("num2").value;
+			var c= Number(a)+Number(b);
+			document.getElementById("demo").innerHTML="Result:<div class='box'>" + c +"</div>";
+		}
+
+		function sub()
+		{
+			var a = document.getElementById("num1").value;
+		 	var b = document.getElementById("num2").value;
+			var c= Number(a)-Number(b);
+			document.getElementById("demo").innerHTML="Result:<div class='box'>" + c +"</div>";
+		}
+
+		function mul()
+		{
+			var a = document.getElementById("num1").value;
+		 	var b = document.getElementById("num2").value;
+			var c= Number(a)*Number(b);
+			document.getElementById("demo").innerHTML="Result:<div class='box'>" + c +"</div>";
+		}
+
+		function div()
+		{
+			var a = document.getElementById("num1").value;
+		 	var b = document.getElementById("num2").value;
+			var c= Number(a)/Number(b);
+			document.getElementById("demo").innerHTML="Result:<div class='box'>" + c +"</div>";
+		}
+
+
+	</script>
+</body>
+</html>

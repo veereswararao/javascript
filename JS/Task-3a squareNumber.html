@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task-3A</title>
+</head>
+<body>
+	Enter a number: <input type="number" id="input" autofocus="on" required="required"/>
+
+	<input type="button" value="Square it" onclick="squareNumber()"  /><br/>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		
+		squareNumber(input);
+		 function squareNumber(num)
+		 { 
+		 	var input = document.getElementById("input").value;
+		 	var sqr= input*input;
+		 	document.getElementById("demo").innerHTML="The result of squaring the number "+ input+" is "+sqr;
+		 return sqr;
+		}	
+
+	</script>
+</body>
+</html>

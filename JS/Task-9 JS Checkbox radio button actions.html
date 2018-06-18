@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>CheckBoxes</title>
+	</head>
+	<body>
+		<button type="button" onclick="javascript:check2();" id="check1">CheckBoxes</button>
+		<div id="ifChecked" style="visibility:hidden">
+			<input type="checkbox" name="box" value="box1">box1</input><br/>
+			<input type="checkbox" name="box" value="box2">box2</input><br/>
+			<input type="checkbox" name="box" value="box3">box3</input><br/>
+			<input type="checkbox" name="box" value="box4">box4</input><br/><br>
+		</div>
+		<button type="button" onclick="javascript:butt()">Buttons</button>
+		<div id="checked2" style="visibility:hidden">
+			<br/><input type="radio" name="button" value="button1">button1</input><br/>
+			<input type="radio" name="button" value="button2">button2</input><br/>
+			<input type="radio" name="button" value="button3">button3</input><br/>
+			<input type="radio" name="button" value="button4">button4</input><br/><br>
+		</div>
+	</body>
+	<script>
+		function check2()
+		{
+				document.getElementById('ifChecked').style.visibility = 'visible';
+		}
+		function butt()
+		{
+				document.getElementById('checked2').style.visibility = 'visible';
+		}
+	</script>
+</html>
